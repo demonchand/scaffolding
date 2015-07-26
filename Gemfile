@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "pg"
 
 group :development, :test do
+  # Angualr Generator from the local
+  gem 'angular-generators', :path => '../angular-generators'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
