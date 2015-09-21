@@ -29,7 +29,6 @@
 
 <br>
 
-</div>
 
 
 <!-- Form Dialog Box -->
@@ -46,13 +45,15 @@
         <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <form class="contact" name="contact">
+        <form ng-submit="submitForm()" class="contact" name="contact">
             <label class="label" for="name">Your Name</label><br>
-            <input type="text" name="name" class="input-xlarge"><br>
+            <input type="text" ng-model="product.name" name="name" class="input-xlarge"><br>
             <label class="label" for="email">Your E-mail</label><br>
-            <input type="email" name="email" class="input-xlarge"><br>
+            <input type="email" ng-model="product.email" name="email" class="input-xlarge"><br>
             <label class="label" for="message">Enter a Message</label><br>
-            <textarea name="message" class="input-xlarge"></textarea>
+            <textarea name="message" ng-model="product.desc" class="input-xlarge"></textarea>
+            <button type="submit">Submit</button>
+
         </form>
       </div>
       <div class="modal-footer">
@@ -61,4 +62,6 @@
     </div>
 
   </div>
+</div>
+
 </div>
